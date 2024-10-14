@@ -10,7 +10,7 @@ import { ChartModule } from 'primeng/chart';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'testbarchart';
+  title = 'catDetectorFE';
 
   basicData = {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
