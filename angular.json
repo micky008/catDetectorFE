@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+			"baseHref": "/browser",  
             "outputPath": "dist/catDetectorFE",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -33,6 +34,7 @@
           },
           "configurations": {
             "production": {
+			  "baseHref": "/browser/",
               "budgets": [
                 {
                   "type": "initial",
@@ -50,7 +52,8 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+			  "baseHref": "/browser/"
             }
           },
           "defaultConfiguration": "production"
